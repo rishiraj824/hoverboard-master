@@ -1,0 +1,163 @@
+[{
+    "date": "2015-10-31",
+    "dateReadable": "October 31",
+    "tracks": [{
+        "title": "CS Hall"
+    }],
+    "timeslots": [{
+        "startTime": "10:00",
+        "endTime": "10:30",
+        "sessions": [
+            [1001]
+        ]
+    }, {
+        "startTime": "10:30",
+        "endTime": "11:15",
+        "sessions": [
+            [1005]
+        ]
+    }, {
+        "startTime": "11:15",
+        "endTime": "12:15",
+        "sessions": [
+            [125]
+        ]
+    }, {
+        "startTime": "12:15",
+        "endTime": "12:45",
+        "sessions": [
+            [109]
+        ]
+    }, {
+        "startTime": "12:45",
+        "endTime": "14:00",
+        "sessions": [
+            [1002]
+        ]
+    }, {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "sessions": [
+            [107]
+        ]
+    }, {
+        "startTime": "15:00",
+        "endTime": "15:30",
+        "sessions": [
+            [115]
+        ]
+    }, {
+        "startTime": "15:30",
+        "endTime": "16:00",
+        "sessions": [
+            [113]
+        ]
+    }, {
+        "startTime": "16:15",
+        "endTime": "17:30",
+        "sessions": [
+            [1003]
+        ]
+    }, {
+        "startTime": "17:30",
+        "endTime": "18:00",
+        "sessions": [
+            [101]
+        ]
+    }]
+}] /*{
+    "date": "2015-10-24",
+    "dateReadable": "October 24",
+    "tracks": [{
+        "color": "#90be4e",
+        "title": "Room 1"
+    }, {
+        "color": "#03a9f4",
+        "title": "Room 2"
+    }, {
+        "color": "#e91e63",
+        "title": "Room 3"
+    }],
+    "timeslots": [{
+        "startTime": "09:30",
+        "endTime": "10:10",
+        "sessions": [
+            [1004]
+        ]
+    }, {
+        "startTime": "10:10",
+        "endTime": "10:50",
+        "sessions": [
+            [110],
+            [103],
+            [121]
+        ]
+    }, {
+        "startTime": "11:00",
+        "endTime": "11:40",
+        "sessions": [
+            [107],
+            [134],
+            [121]
+        ]
+    }, {
+        "startTime": "11:50",
+        "endTime": "12:30",
+        "sessions": [
+            [112],
+            [135],
+            [121]
+        ]
+    }, {
+        "startTime": "12:30",
+        "endTime": "14:00",
+        "sessions": [
+            [1002]
+        ]
+    }, {
+        "startTime": "14:00",
+        "endTime": "14:40",
+        "sessions": [
+            [102],
+            [122],
+            [131]
+        ]
+    }, {
+        "startTime": "14:50",
+        "endTime": "15:30",
+        "sessions": [
+            [104],
+            [123],
+            [131]
+        ]
+    }, {
+        "startTime": "15:30",
+        "endTime": "16:00",
+        "sessions": [
+            [1003]
+        ]
+    }, {
+        "startTime": "16:00",
+        "endTime": "16:40",
+        "sessions": [
+            [105],
+            [108],
+            [130]
+        ]
+    }, {
+        "startTime": "16:50",
+        "endTime": "17:30",
+        "sessions": [
+            [119],
+            [140],
+            [130]
+        ]
+    }, {
+        "startTime": "17:40",
+        "endTime": "18:00",
+        "sessions": [
+            [1007]
+        ]
+    }]
+}]
+*/

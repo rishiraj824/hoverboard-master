@@ -1,0 +1,252 @@
+<script type="text/javascript" src="jquery.min.js"></script>
+<dom-module id="tickets-block">
+    <template>
+        <style>
+            :host {
+                display: block;
+                background: var(--default-primary-color);
+                color: #fff;
+            }
+
+            .container {
+                padding-bottom: 35px;
+            }
+
+            .price-block-wrapper {
+                margin-top: 20px;
+            }
+
+            .ticket-name {
+                margin-bottom: -5px;
+                font-size: 30px;
+                font-weight: 200;
+            }
+
+            .price-block {
+                margin-bottom: 15px;
+            }
+
+            .sold-out > *:not(.sold-out-text) {
+                opacity: .3;
+            }
+
+            .sold-out-text {
+                font-size: 28px;
+                text-transform: uppercase;
+            }
+
+            .currency {
+                margin-top: 21px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .price {
+                font-size: 70px;
+                font-weight: 200;
+            }
+
+            .details {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .additional-info {
+                margin-top: -5px;
+                font-size: 13px;
+            }
+
+            .open-dialog-button {
+                margin-top: 30px;
+            }
+
+            paper-dialog {
+                background: #fff;
+            }
+
+            @media (min-height: 400px) {
+                paper-dialog {
+                    min-height: 380px;
+                }
+            }
+
+            paper-dialog .buttons {
+                color: initial;
+            }
+              paper-radio-button{
+                /* Unchecked state colors. */
+                --paper-radio-button-unchecked-color: #5a5a5a;
+                --paper-radio-button-unchecked-background-color: #fff;
+                --paper-radio-button-unchecked-ink-color: #5a5a5a;
+
+                /* Checked state colors. */
+                --paper-radio-button-checked-color: #009688;
+                --paper-radio-button-checked-ink-color: #0f9d58;
+
+                --paper-radio-button-label-color: white;
+              }
+        </style>
+        <div id="register" class="container wrap relative layout vertical center-center">
+            <h4 class="heading">REGISTER</h4>
+            <div class="price-block-wrapper flex layout vertical-horizontal">
+                <div id="mc_embed_signup" class="mc_embed_signup layout vertical center-center">
+                    <form action="{{ url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate" target="_blank" novalidate>
+                        <div class="mc-field-group layout vertical text-center">
+                            <paper-input-container no-label-float class="text-left">
+                                <label>Your Name</label>
+                                <input is="iron-input" type="name" name="name" id="name" autocomplete="off">
+                            </paper-input-container>
+                            <paper-input-container no-label-float class="text-left">
+                                <label>Your Reg No</label>
+                                <input is="iron-input" type="regno" name="regno" id="regno" autocomplete="off">
+                                
+                            </paper-input-container>
+                            <div class="horizontal-section">
+                            <paper-radio-button class="white" name="gender" id="gender"value="Male"required toggles="false" active >Male</paper-radio-button>
+                            <paper-radio-button class="white" name="gender" id="gender"value="Female" toggles="false"required>Female</paper-radio-button>
+                            </div>
+                            <!-- <paper-radio-button checked="true" role="radio" tabindex="0" toggles="" aria-checked="true" aria-disabled="false" active="" class="x-scope paper-radio-button-0">
+                                
+                            
+                                <div id="radioContainer" class="style-scope paper-radio-button">
+                                  
+                                  <div id="onRadio" class="style-scope paper-radio-button">Male</div>
+                                </div>
+                            
+                            <div id="radioLabel" class="style-scope paper-radio-button">Male</div>
+                            
+                            </paper-radio-button>
+                            <paper-radio-button checked="" role="radio" tabindex="0" toggles="" aria-checked="true" aria-disabled="false" active="" class="x-scope paper-radio-button-1">
+                              
+                            
+                                                          <div id="radioContainer" class="style-scope paper-radio-button">
+                                                            <div id="offRadio" class="style-scope paper-radio-button">Female</div>
+                                                            
+                                                          </div>
+                            
+                                     <div id="radioLabel" class="style-scope paper-radio-button">Female</div>
+                            
+                                </paper-radio-button> -->
+                           <!--  <template>
+                             <style>
+                               .floated-label {
+                                 font-size: 0.75em;
+                                 padding: 1em 0;
+                                 white-space: nowrap;
+                                 color: #757575;
+                               }
+                               .label-text {
+                                 display: inline-block;
+                                 white-space: nowrap;
+                                 text-overflow: ellipsis;
+                                 overflow: hidden;
+                               }
+                               ::content > paper-radio-button {
+                                 font-size: 0.75em;
+                                 padding: 1em;
+                               }
+                             </style> -->
+                              <!-- <div class="floated-label" invisible?="{{value === undefined}}">
+                                <span class="label-text">Male</span>
+                              </div>
+                              <paper-radio-group selected="{{value}}" layout vertical>
+                                <content></content>
+                              </paper-radio-group>
+                              <div class="floated-label" invisible?="{{value === undefined}}">
+                                <span class="label-text">Female</span>
+                              </div>
+                              <paper-radio-group selected="{{value}}" layout vertical>
+                                <content></content>
+                              </paper-radio-group>
+                                                          </template> -->
+                           <paper-input-container no-label-float class="text-left">
+                                <label>Your Email</label>
+                                <input is="iron-input" type="email" name="email" id="email" autocomplete="off">
+                                
+                            </paper-input-container>
+                            <paper-input-container no-label-float class="text-left">
+                                 <label>Your Phone Numer</label>
+                                 <input is="iron-input" type="phoneno" name="phoneno" id="phoneno" autocomplete="off">
+                                 
+                             </paper-input-container>
+                            <paper-button class="self-end" id="registerbutton"on-click="submitForm">Submit</paper-button>
+                                   </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                      <!--  <div style="position: absolute; left: -5000px;">
+                          <input type="text" name="{{ name }}" tabindex="-1">
+                      </div>
+                      <div class="mc-submit-group">
+                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" style="display:none">
+                      </div> -->
+                      </form>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
+            <div id="2event_tickets_widget" style="width: 640px; height: 300px; background:#fff;"></div>
+            <div class="buttons">
+                <a href="http://2event.com/events/312113" target="_blank">
+                    <paper-button>Buy on the website</paper-button>
+                </a>
+                <paper-button dialog-confirm>Close</paper-button>
+            </div>
+        </paper-dialog> -->
+    </template>
+
+</dom-module>
+<script>
+    /* jshint ignore:start */
+    var widgetOptions = {
+        bg_color: 'ffffff',
+        id: 312113,
+        lang: 'en'
+    };
+    /* jshint ignore:end */
+    setTimeout(function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'http://2event.com/js/widget-tickets.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    },2000);
+
+    Polymer({
+        is: 'tickets-block',
+        openTicketsDialog: function() {
+            ga('send', 'buy-a-ticket', 'button', 'click'); // jshint ignore:line
+            this.$.ticketsDialog.open();
+        },/*,
+        submitForm: function() {
+            ga('send', 'mailchimp-subscribe', 'button', 'click'); // jshint ignore:line
+            document.getElementById('mc-embedded-subscribe-form').submit();
+        }*/
+        submitForm: function(){
+                  $("#registerbutton").click(function(){
+                $.ajax({url: "elements/tickets-block/register.php"
+                       /*type: 'POST',
+                       data: {
+                                   name: $('#name').val(),
+                                   regno: $('#regno').val(),
+                                   gender: $('#gender').val(),
+                                   email:$('#email').val()
+                         }
+                    success: function(result){
+                    $("#register").html(result);
+                });
+            });*/
+        });
+            });
+              }
+    });
+    /*function submitForm(form){
+    ErrorText= "";
+    if ( ( form.gender[0].checked == false ) && ( form.gender[1].checked == false ) ) 
+    {
+    alert ( "Please choose your Gender: Male or Female" ); 
+    return false;
+    }
+    }
+    function */
+  
+</script>
