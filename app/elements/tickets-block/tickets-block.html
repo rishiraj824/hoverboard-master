@@ -90,95 +90,32 @@
             <h4 class="heading">REGISTER</h4>
             <div class="price-block-wrapper flex layout vertical-horizontal">
                 <div id="mc_embed_signup" class="mc_embed_signup layout vertical center-center">
-                    <form action="{{ url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate" target="_blank" novalidate>
-                        <div class="mc-field-group layout vertical text-center">
-                            <paper-input-container no-label-float class="text-left">
-                                <label>Your Name</label>
-                                <input is="iron-input" type="name" name="name" id="name" autocomplete="off">
-                            </paper-input-container>
-                            <paper-input-container no-label-float class="text-left">
-                                <label>Your Reg No</label>
-                                <input is="iron-input" type="regno" name="regno" id="regno" autocomplete="off">
-                                
-                            </paper-input-container>
-                            <div class="horizontal-section">
-                            <paper-radio-button class="white" name="gender" id="gender"value="Male"required toggles="false" active >Male</paper-radio-button>
-                            <paper-radio-button class="white" name="gender" id="gender"value="Female" toggles="false"required>Female</paper-radio-button>
-                            </div>
-                            <!-- <paper-radio-button checked="true" role="radio" tabindex="0" toggles="" aria-checked="true" aria-disabled="false" active="" class="x-scope paper-radio-button-0">
-                                
-                            
-                                <div id="radioContainer" class="style-scope paper-radio-button">
-                                  
-                                  <div id="onRadio" class="style-scope paper-radio-button">Male</div>
-                                </div>
-                            
-                            <div id="radioLabel" class="style-scope paper-radio-button">Male</div>
-                            
-                            </paper-radio-button>
-                            <paper-radio-button checked="" role="radio" tabindex="0" toggles="" aria-checked="true" aria-disabled="false" active="" class="x-scope paper-radio-button-1">
-                              
-                            
-                                                          <div id="radioContainer" class="style-scope paper-radio-button">
-                                                            <div id="offRadio" class="style-scope paper-radio-button">Female</div>
-                                                            
-                                                          </div>
-                            
-                                     <div id="radioLabel" class="style-scope paper-radio-button">Female</div>
-                            
-                                </paper-radio-button> -->
-                           <!--  <template>
-                             <style>
-                               .floated-label {
-                                 font-size: 0.75em;
-                                 padding: 1em 0;
-                                 white-space: nowrap;
-                                 color: #757575;
-                               }
-                               .label-text {
-                                 display: inline-block;
-                                 white-space: nowrap;
-                                 text-overflow: ellipsis;
-                                 overflow: hidden;
-                               }
-                               ::content > paper-radio-button {
-                                 font-size: 0.75em;
-                                 padding: 1em;
-                               }
-                             </style> -->
-                              <!-- <div class="floated-label" invisible?="{{value === undefined}}">
-                                <span class="label-text">Male</span>
-                              </div>
-                              <paper-radio-group selected="{{value}}" layout vertical>
-                                <content></content>
-                              </paper-radio-group>
-                              <div class="floated-label" invisible?="{{value === undefined}}">
-                                <span class="label-text">Female</span>
-                              </div>
-                              <paper-radio-group selected="{{value}}" layout vertical>
-                                <content></content>
-                              </paper-radio-group>
-                                                          </template> -->
-                           <paper-input-container no-label-float class="text-left">
-                                <label>Your Email</label>
-                                <input is="iron-input" type="email" name="email" id="email" autocomplete="off">
-                                
-                            </paper-input-container>
-                            <paper-input-container no-label-float class="text-left">
-                                 <label>Your Phone Numer</label>
-                                 <input is="iron-input" type="phoneno" name="phoneno" id="phoneno" autocomplete="off">
-                                 
-                             </paper-input-container>
-                            <paper-button class="self-end" id="registerbutton"on-click="submitForm">Submit</paper-button>
-                                   </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
-                      <!--  <div style="position: absolute; left: -5000px;">
-                          <input type="text" name="{{ name }}" tabindex="-1">
+                  
+
+                   <form method="POST" action="http://localhost:1330/get" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate">
+                      <paper-input-container no-label-float class="text-left">
+                          <label>Your Name</label>
+                          <input is="iron-input" type="name" name="name" id="name" autocomplete="off">
+                      </paper-input-container>
+                      <paper-input-container no-label-float class="text-left">
+                          <label>Registeration Number</label>
+                          <input is="iron-input" type="name" name="registeration_number" id="registeration_number" autocomplete="off">
+                      </paper-input-container>
+                      <div class="horizontal-section">
+                        <paper-radio-button class="white" name="gender" id="gender"value="Male"required toggles="false" active >Male</paper-radio-button>
+                        <paper-radio-button class="white" name="gender" id="gender"value="Female" toggles="false"required>Female</paper-radio-button>
                       </div>
-                      <div class="mc-submit-group">
-                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" style="display:none">
-                      </div> -->
-                      </form>
+                      <paper-input-container no-label-float class="text-left">
+                          <label>Your Email</label>
+                          <input is="iron-input" type="name" name="email" id="name" autocomplete="off">
+                      </paper-input-container>
+                      <paper-input-container no-label-float class="text-left">
+                          <label>Your Phone Number</label>
+                          <input is="iron-input" type="name" name="mobile_number" id="name" autocomplete="off">
+                      </paper-input-container>
+                      <input type="submit" value="submit">
+                  </form>
+
                 </div>
             </div>
         </div>
