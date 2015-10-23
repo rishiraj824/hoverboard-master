@@ -176,7 +176,7 @@
                     <div class="layout vertical-horizontal wrap">
                         <template id="peopleList" is="dom-repeat" items="[[people]]" as="person" filter="checkHiding">
                             <div class="card-wrapper layout horizontal" hidden$="{{person.hide}}">
-                                <paper-material class="flex pointer" on-tap="readMore">
+                                <paper-material class="flex pointer" >
                                     <div class="people-header relative">
                                         <iron-image src="[[person.photoUrl]]" class="placeholder-color fit" preload fade sizing="cover"></iron-image>
                                         <div class="people-image-overlay fit"></div>
@@ -208,30 +208,30 @@
                         </template>
                     </div>
                 </div>
-                <div id="sideMenu" class="side-menu layout vertical">
-                    <paper-card class="filters">
-                        <div class="card-content header">
-                            <div class="title-text">Filters</div>
-                        </div>
-                        <div class="card-content">
-                            <div id="tagFilter" class="selector-group layout horizontal-vertical wrap">
-                                <template is="dom-repeat" items="{{tags}}" as="filter">
-                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
-                                </template>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <div id="badgeFilter" class="selector-group layout horizontal-vertical">
-                                <template is="dom-repeat" items="[[badges]]" as="filter">
-                                    <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
-                                </template>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <paper-button on-tap="_toggleFilters">{{toggleFiltersButton.title}}</paper-button>
-                        </div>
-                    </paper-card>
-                </div>
+               <!--  <div id="sideMenu" class="side-menu layout vertical">
+                   <paper-card class="filters">
+                       <div class="card-content header">
+                           <div class="title-text">Filters</div>
+                       </div>
+                       <div class="card-content">
+                           <div id="tagFilter" class="selector-group layout horizontal-vertical wrap">
+                               <template is="dom-repeat" items="{{tags}}" as="filter">
+                                   <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
+                               </template>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <div id="badgeFilter" class="selector-group layout horizontal-vertical">
+                               <template is="dom-repeat" items="[[badges]]" as="filter">
+                                   <paper-checkbox class$="[[filter.className]]" on-change="_filter" checked>[[filter.name]]</paper-checkbox>
+                               </template>
+                           </div>
+                       </div>
+                       <div class="card-content">
+                           <paper-button on-tap="_toggleFilters">{{toggleFiltersButton.title}}</paper-button>
+                       </div>
+                   </paper-card>
+               </div> -->
             </div>
         </div>
         <div id="personCon" class="person-wrapper container relative">

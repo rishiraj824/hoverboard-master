@@ -1,4 +1,4 @@
-<script type="text/javascript" src="jquery.min.js"></script>
+
 <dom-module id="tickets-block">
     <template>
         <style>
@@ -59,15 +59,42 @@
             .open-dialog-button {
                 margin-top: 30px;
             }
+            paper-input-container {
+              display: block;
+                    padding: 16px 0 !important;
+            }
 
             paper-dialog {
                 background: #fff;
             }
+            .btn {
+                 display: inline-block;
+                 position: relative;
+                 box-sizing: border-box;
+                 min-width: 10.14em !important;
+                 margin: 0 0.29em !important;
+                 background: transparent;
+                 text-align: center;
+                 font: inherit;
+                 text-transform: uppercase;
+                 outline-width: 0 !important;
+                 border-radius: 3px;
+                 -moz-user-select: none;
+                 -ms-user-select: none;
+                 -webkit-user-select: none;
+                 user-select: none;
+                 cursor: pointer;
+                 z-index: 0;
+                 padding: 0.7em 0.57em !important;
+                 border-color: transparent;
+                 color: white;
+            }
+
 
             @media (min-height: 400px) {
                 paper-dialog {
                     min-height: 380px;
-                }
+                } 
             }
 
             paper-dialog .buttons {
@@ -87,33 +114,29 @@
               }
         </style>
         <div id="register" class="container wrap relative layout vertical center-center">
-            <h4 class="heading">REGISTER</h4>
+            <h2 class="heading">REGISTER</h2>
             <div class="price-block-wrapper flex layout vertical-horizontal">
                 <div id="mc_embed_signup" class="mc_embed_signup layout vertical center-center">
                   
 
                    <form method="POST" action="http://localhost:1330/get" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate">
-                      <paper-input-container no-label-float class="text-left">
+                      <paper-input-container no-label-float class="text-center">
                           <label>Your Name</label>
                           <input is="iron-input" type="name" name="name" id="name" autocomplete="off">
                       </paper-input-container>
-                      <paper-input-container no-label-float class="text-left">
-                          <label>Registeration Number</label>
+                      <paper-input-container no-label-float class="text-center">
+                          <label>Registration Number</label>
                           <input is="iron-input" type="name" name="registeration_number" id="registeration_number" autocomplete="off">
                       </paper-input-container>
-                      <div class="horizontal-section">
-                        <paper-radio-button class="white" name="gender" id="gender"value="Male"required toggles="false" active >Male</paper-radio-button>
-                        <paper-radio-button class="white" name="gender" id="gender"value="Female" toggles="false"required>Female</paper-radio-button>
-                      </div>
-                      <paper-input-container no-label-float class="text-left">
+                      <paper-input-container no-label-float class="text-center">
                           <label>Your Email</label>
                           <input is="iron-input" type="name" name="email" id="name" autocomplete="off">
                       </paper-input-container>
-                      <paper-input-container no-label-float class="text-left">
+                      <paper-input-container no-label-float class="text-center">
                           <label>Your Phone Number</label>
                           <input is="iron-input" type="name" name="mobile_number" id="name" autocomplete="off">
                       </paper-input-container>
-                      <input type="submit" value="submit">
+                      <input type="submit" class ="btn text-center"value="submit">
                   </form>
 
                 </div>

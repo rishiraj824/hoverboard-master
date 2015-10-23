@@ -12,55 +12,50 @@
         ]
     }, {
         "startTime": "10:30",
-        "endTime": "11:15",
-        "sessions": [
-            [1005]
-        ]
-    }, {
-        "startTime": "11:15",
-        "endTime": "12:15",
-        "sessions": [
-            [125]
-        ]
-    }, {
-        "startTime": "12:15",
-        "endTime": "12:45",
-        "sessions": [
-            [109]
-        ]
-    }, {
-        "startTime": "12:45",
-        "endTime": "14:00",
-        "sessions": [
-            [1002]
-        ]
-    }, {
-        "startTime": "14:00",
-        "endTime": "15:00",
-        "sessions": [
-            [108]
-        ]
-    }, {
-        "startTime": "15:00",
-        "endTime": "15:30",
-        "sessions": [
-            [116]
-        ]
-    }, {
-        "startTime": "15:30",
-        "endTime": "16:00",
+        "endTime": "10:50",
         "sessions": [
             [113]
-            ]
+        ]
     }, {
-        "startTime": "16:15",
-        "endTime": "17:30",
+        "startTime": "11:00",
+        "endTime": "11:30",
         "sessions": [
             [114]
         ]
     }, {
-        "startTime": "17:30",
-        "endTime": "18:00",
+        "startTime": "11:30",
+        "endTime": "12:00",
+        "sessions": [
+            [109]
+        ]
+    }, {
+        "startTime": "12:00",
+        "endTime": "12:30",
+        "sessions": [
+            [1002]
+        ]
+    }, {
+        "startTime": "12:45",
+        "endTime": "13:45",
+        "sessions": [
+            [108]
+        ]
+    }, {
+        "startTime": "13:45",
+        "endTime": "14:15",
+        "sessions": [
+            [116]
+        ]
+    }, {
+        "startTime": "14:15",
+        "endTime": "14:45",
+        "sessions": [
+            [118]
+            ]
+    },
+    {
+      "startTime": "14:45",
+        "endTime": "16:00",
         "sessions": [
             [1006]
         ]
