@@ -120,16 +120,24 @@
               }
               #register form{
                 background: #fff;
-                padding: 20px;
-                border-radius: 2px;
+                padding: 50px;
+                border-radius: 3px;
+              }
+
+              tickets-block{
+                padding-bottom: 32px !important;
               }
         </style>
-        <div id="register" class="container wrap relative layout vertical center-center">
-            <h2 class="heading">REGISTER</h2>
-            <div class="price-block-wrapper flex layout vertical-horizontal">
-                <div id="mc_embed_signup" class="mc_embed_signup layout vertical center-center">
+        
+        
+          
+      
+        <div id="register" class="container wrap flex relative layout vertical-horizontal">
+           
+            <div class="price-block-wrapper">
+                <div id="mc_embed_signup" class="mc_embed_signup layout relative vertical flex center-content-xs center-center">
                   
-
+                   <h2 class="heading">REGISTER HERE</h2>
                    <form method="POST" action="http://localhost:1330/get" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate">
                       <paper-input-container no-label-float class="text-center">
                           <label style="color:#EBEBE4">Your Name</label>
@@ -152,6 +160,10 @@
 
                 </div>
             </div>
+            <div class="flex flow-wrapper relative right-section center-content-xs">
+              <img style="width:auto;max-width:90%;height:auto;"src="../../images/sjt.png">  
+            </div>
+            
         </div>
 <!-- 
         <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
