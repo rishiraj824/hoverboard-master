@@ -29,7 +29,7 @@ gulp.task('connect-sync', function() {
       proxy: 'localhost:8002'
     });
   });
- 
+
   gulp.watch('**/*.php').on('change', function () {
     browserSync.reload();
   });
@@ -247,7 +247,8 @@ gulp.task('serve', ['styles', 'elements', 'images'], function () {
       routes: {
         '/bower_components': 'bower_components'
       }
-    }
+    },
+    port:8080
   });
 
   gulp.watch(['app/**/*.html'], reload);
