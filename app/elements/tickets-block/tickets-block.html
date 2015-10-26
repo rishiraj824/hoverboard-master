@@ -139,21 +139,21 @@
                   
                    <h2 class="heading">REGISTER HERE</h2>
                    <form method="POST" action="http://localhost:1330/get" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form validate">
-                      <paper-input-container no-label-float class="text-center">
-                          <label style="color:#EBEBE4">Your Name</label>
-                          <input is="iron-input" type="name" name="name" id="name" autocomplete="off">
+                      <paper-input-container no-label-float required class="text-center">
+                          <label style="color:#727272">Your Name</label>
+                          <input is="iron-input" type="name" required name="name" id="name" autocomplete="off">
                       </paper-input-container>
-                      <paper-input-container no-label-float class="text-center">
-                          <label style="color:#EBEBE4">Registration Number</label>
-                          <input is="iron-input" type="name" name="registeration_number" id="registeration_number" autocomplete="off">
+                      <paper-input-container no-label-float required class="text-center">
+                          <label style="color:#727272">Registration Number</label>
+                          <input is="iron-input" type="name" required name="registeration_number" id="registeration_number" autocomplete="off">
                       </paper-input-container>
-                      <paper-input-container no-label-float class="text-center">
-                          <label style="color:#EBEBE4">Your Email</label>
-                          <input is="iron-input" type="name" name="email" id="name" autocomplete="off">
+                      <paper-input-container no-label-float required class="text-center">
+                          <label style="color:#727272">Your Email</label>
+                          <input is="iron-input" type="name" required name="email" id="name" autocomplete="off">
                       </paper-input-container>
-                      <paper-input-container no-label-float class="text-center">
-                          <label style="color:#EBEBE4">Your Phone Number</label>
-                          <input is="iron-input" type="name" name="mobile_number" id="name" autocomplete="off">
+                      <paper-input-container no-label-float required class="text-center">
+                          <label style="color:#727272">Your Phone Number</label>
+                          <input is="iron-input" type="name"required  name="mobile_number" id="name" autocomplete="off">
                       </paper-input-container>
                       <input type="submit" class ="btn text-center"value="submit">
                   </form>
@@ -175,6 +175,25 @@
                 <paper-button dialog-confirm>Close</paper-button>
             </div>
         </paper-dialog> -->
+        <script>
+           Polymer({
+             message: '',
+             messageValidationError: '',
+             minLength: 5,
+             maxLength: 50,
+             messageChanged: function() {
+               var trimmedMessage = this.message.trim();
+               if (trimmedMessage.length < this.minLength ||
+                   trimmedMessage.length > this.maxLength) {
+                     this.messageValidationError = 'Must be between ' +
+                                         this.minLength + ' and ' +
+                                         this.maxLength + ' characters.';
+               } else {
+                 this.messageValidationError = '';
+               }
+             }
+           });
+         </script>required 
     </template>
 
 </dom-module>
