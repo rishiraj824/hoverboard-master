@@ -45,12 +45,11 @@
     "video": ""
   },
   {
-    "id": 1006,
+    "id": 106,
     "title": "Keynote - Subhasish Ghosh",
     "speakers": [19],
     "language": "en",
     "description": "Cloud Scenario in different sectors.",
-    "language": "",
     "complexity": "",
     "presentation": "",
     "video": ""
@@ -140,7 +139,7 @@
   {
     "id": 1008,
     "title": "Closing and Prize Distribution",
-    "description": "",
+    "description": "",      
     "presentation": "",
     "video": "",
     "tags": [
