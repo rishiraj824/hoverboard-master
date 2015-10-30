@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "title": "Opening",
-    "description": "",
+    "description": "Introduction to GDG and what the DevFest is.",
     "language": "",
     "complexity": "",
     "presentation": "",
@@ -45,10 +45,11 @@
     "video": ""
   },
   {
-    "id": 1006,
-    "title": "Closing and Distribution of Goodie Bags",
-    "description": "See You!!",
-    "language": "",
+    "id": 106,
+    "title": "Keynote - Subhasish Ghosh",
+    "speakers": [19],
+    "language": "en",
+    "description": "Cloud Scenario in different sectors.",
     "complexity": "",
     "presentation": "",
     "video": ""
@@ -129,6 +130,16 @@
     "speakers": [17],
     "language": "en",
     "complexity": "Beginner",
+    "presentation": "",
+    "video": "",
+    "tags": [
+        "Design"
+    ]
+  },
+  {
+    "id": 1008,
+    "title": "Closing and Prize Distribution",
+    "description": "",      
     "presentation": "",
     "video": "",
     "tags": [

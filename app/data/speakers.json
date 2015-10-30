@@ -44,12 +44,11 @@
     },
     {
         "id": 12,
-         "featured": true,
-        "name": "Rajalakshmi Senthil",
+        "name": "Darshan Mehta",
         "title": "Developer",
         "company": "GDG VIT",
         "country": "India",
-        "photoUrl": "../../images/people/rajalakshmi.jpg",
+        "photoUrl": "../../images/people/darshan.jpg",
         "bio": "",
         "badges": [
             {
@@ -63,7 +62,24 @@
         ]
     },
     {
+        "id": 19,
+        "featured": true,
+        "name": "Subhasish Ghosh",
+        "title": "Associate Principal Consultant - Amazon Web Services ",
+        "company": "Mactores Technologies",
+        "country": "India",
+        "photoUrl": "../../images/people/subhasish.jpg",
+        "bio": "",
+        "badges": [
+           
+        ],
+        "socials": [
+           
+        ]
+    },
+    {
         "id": 13,
+        "featured": true,
         "name": "Ashwini Purohit",
         "title": "Developer",
         "company": "GDG VIT",
@@ -109,7 +125,6 @@
     },
     {
         "id": 16,
-         "featured": true,
         "name": "Namit Juneja",
         "title": "Software Developer",
         "company": "GDG-VIT",
@@ -132,6 +147,7 @@
     },
     {
         "id": 17,
+        "featured": true,
         "name": "Suaraj Babu",
         "title": "UI/UX Designer",
         "company": "GDG VIT",
