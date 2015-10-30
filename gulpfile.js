@@ -248,7 +248,7 @@ gulp.task('serve', ['styles', 'elements', 'images'], function () {
         '/bower_components': 'bower_components'
       }
     },
-    port:2210
+    port:80
   });
 
   gulp.watch(['app/**/*.html'], reload);
